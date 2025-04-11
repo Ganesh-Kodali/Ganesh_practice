@@ -18,7 +18,7 @@ printf("*   ");
 printf("\n");
 }
 
-for (i=rows-1;i>=0;i--)
+for (i=rows-2;i>=0;i--)
 {
 	 if (i%2==0)
 		continue;
