@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/Ganesh.dir/src/hello.c.o  -o Ganesh 
