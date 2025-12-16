@@ -1,0 +1,65 @@
+Ganesh docker doc
+
+
+*******
+to install 
+
+sudo apt install apt-transport-https ca-certificates curl software-properties-common 
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+
+apt-cache policy docker-ce
+
+sudo apt install docker-ce
+
+sudo systemctl status docker  // shows active or not
+
+docker // show all cmds in docker 
+
+******
+
+creating files
+
+add.c  add.h  app.c  Dockerfile  sub.c  sub.h
+
+inside Dockerfile
+
+(
+FROM gcc:latest
+
+WORKDIR /app
+
+COPY . .
+
+RUN gcc app.c add.c sub.c -o app
+
+CMD ["./app"]
+
+)
+
+******
+
+to run
+
+sudo docker build -t my-app .
+
+sudo docker run my-app 
+
+******
+
+to share to diff device 
+
+sudo docker save my-app -o my-app.tar /// convert to tar file and share
+
+ls -lh my-app.tar /// to know the size
+
+scp my-app.tar abyys@192.168.68.116:~/Documents/docker /// sharing cmd
+
+docker load -i hello-22.04.tar /// to unzip
+
+
+
+
+
