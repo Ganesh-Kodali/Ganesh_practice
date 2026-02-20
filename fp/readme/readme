@@ -1,0 +1,14 @@
+uboot bb file
+==============
+copy files from 
+/yoctotutor/sources/poky/meta/recipes-bsp/u-boot$ ls
+files                 u-boot_2022.01.bb  u-boot-configure.inc  u-boot-tools_2022.01.bb
+libubootenv_0.3.2.bb  u-boot-common.inc  u-boot.inc            u-boot-tools.inc
+to meta layer change .bb file name to u-boot-g
+then 
+to change preffered referrence 
+/yoctotutor/sources/poky/meta-yocto-bsp/conf/machine$ vim beaglebone-yocto.conf 
+
+PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot-g"
+
+
