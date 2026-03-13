@@ -1,5 +1,8 @@
 #include<stdio.h>
+
 int main()
 {
-printf("siva\n");
+
+printf("hi\n");
 }
+   
