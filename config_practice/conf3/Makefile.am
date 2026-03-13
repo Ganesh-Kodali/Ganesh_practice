@@ -1,0 +1,1 @@
+BUILDIRS=src
