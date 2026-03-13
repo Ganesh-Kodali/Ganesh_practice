@@ -1,0 +1,16 @@
+rom code
+
+spl
+tpl
+
+all floders in board
+
+start up code 
+
+linker script
+
+device tree
+
+u boot code flow
+
+
