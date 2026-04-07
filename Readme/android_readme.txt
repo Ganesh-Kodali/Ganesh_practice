@@ -10,5 +10,18 @@ tried to soft link it to latest version but it didnt work coz it is using python
 
 Went through directory structure 
 
-and went through architecture , understood all layers and what each layer(system apps , java api framework native c/c++, ART,HAL, LIinux kernel and binderIPC ) functionality is and their submodules  
+and went through architecture , understood all layers and what each layer(system apps , java api framework native c/c++, ART,HAL, LIinux kernel and binderIPC ) functionality is and their submodules
+
+===============================================================================
+
+Apr 7
+
+Understood booting sequence 
+
+Init 
+zygote,dalvit vm and system services , and surface n audio flingers 
+
+In tools 
+
+Understood about Git and Repo
 
